@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Sign Up</title>
+    <style>
+        body{
+           background-color: rgb(1, 26, 58);
+
+        }
+        input{
+           background-color: rgb(1, 26, 58);
+
+        }
+    </style>
+</head>
+    <!-- component -->
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="border border-sky-400 px-6 py-8 rounded shadow-md text-white w-full">
+            <h1 class="mb-8 text-3xl text-pink-400 font-serif text-center hover:text-sky-400 ">Sign up</h1>
+            <input 
+                type="text"
+                class="block border border-sky-400 w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Full Name" />
+
+            <input 
+                type="text"
+                class="block border border-sky-400 w-full p-3 rounded mb-4"
+                name="email"
+                placeholder="Email" />
+
+            <input 
+                type="password"
+                class="block border border-sky-400 w-full p-3 rounded mb-4"
+                name="password"
+                placeholder="Password" />
+            <input 
+                type="password"
+                class="block border border-sky-400  w-full p-3 rounded mb-4"
+                name="confirm_password"
+                placeholder="Confirm Password" />
+
+            <button
+                type="submit"
+                class="px-3 text-center py-3 rounded bg-green text-pink-400 hover:text-sky-400 hover:border-pink-400 border border-sky-400 hover:bg-green-dark focus:outline-none my-1"
+            >Create Account</button>
+
+            <div class="text-center text-sm text-sky-200 mt-4">
+                By signing up, you agree to the 
+                <a class="no-underline hover:text-sky-400 text-pink-400" href="#">
+                    Terms of Service
+                </a> and 
+                <a class="no-underline hover:text-pink-400 text-sky-400" href="#">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+
+        <div class="text-sky-400 mt-6 ">
+            <span class="text-sm border border-pink-400 p-2 rounded">Already have an account?</span> 
+            <a class="no-underline border rounded  border-sky-400 hover:text-sky-400 text-pink-400 hover:border-pink-400 px-2 py-2 text-sm" href="./index.html">
+                Log in
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
